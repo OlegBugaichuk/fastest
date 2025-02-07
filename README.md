@@ -20,13 +20,8 @@ pip install fastest
 
 ## Example
 
-Showcase how your project can be used:
-
-```python
-from fastest.example import some_function
-
-print(some_function(3, 4))
-# => 7
+```bash
+fastest application.path:app
 ```
 
 ## License

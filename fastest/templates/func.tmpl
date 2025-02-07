@@ -1,0 +1,5 @@
+{% for method in route.methods %}
+def test_{{ route.unique_id }}(client):
+    response = client.{{ method.lower() }}("{{ route.path }}")
+    assert response.status_code == {{ route.status_code }}
+{% endfor %}
