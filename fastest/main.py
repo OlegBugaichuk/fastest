@@ -9,7 +9,7 @@ from http import HTTPStatus
 from fastest.utils.generators import router_test_generator
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("path", type=str, help="FastAPI application path. application.path:app")
     args = parser.parse_args()
