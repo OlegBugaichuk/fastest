@@ -9,7 +9,7 @@ from http import HTTPStatus
 from fastest.utils.generators import router_test_generator
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("path", type=str, help="FastAPI application path. application.path:app")
     args = parser.parse_args()
@@ -34,3 +34,7 @@ if __name__ == '__main__':
             if isinstance(router, APIRoute):
                 test = router_test_generator(router)
                 routers_tests_file.write(test)
+
+
+if __name__ == "__main__":
+    main()
