@@ -25,11 +25,10 @@ def get_app() -> FastAPI:
     parser.add_argument(
         'path', type=str, help='FastAPI application path. application.path:app',
     )
-    args = parser.parse_args()
-    module_path, app_path = args.path.rsplit(':', 1)
+    module_path, app_path = parser.parse_args().path.rsplit(':', 1)
     module_obj = importlib.import_module(module_path)
-    app: FastAPI = getattr(module_obj, app_path)
-    return app
+    return getattr(module_obj, app_path)  # type: ignore[no-any-return]
+
 
 def main() -> None:
     """Main function."""
