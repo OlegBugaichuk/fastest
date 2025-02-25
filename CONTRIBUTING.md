@@ -19,7 +19,6 @@ Run `make test` to run everything we have!
 ## Tests
 
 We use `pytest` and `flake8` for quality control.
-We also use [wemake_python_styleguide](https://github.com/wemake-services/wemake-python-styleguide) to enforce the code quality.
 
 To run all tests:
 

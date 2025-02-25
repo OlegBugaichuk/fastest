@@ -3,7 +3,6 @@
 [![Build Status](https://github.com/OlegBugaichuk/fastest/workflows/test/badge.svg?branch=master&event=push)](https://github.com/OlegBugaichuk/fastest/actions?query=workflow%3Atest)
 [![codecov](https://codecov.io/gh/OlegBugaichuk/fastest/branch/master/graph/badge.svg)](https://codecov.io/gh/OlegBugaichuk/fastest)
 [![Python Version](https://img.shields.io/pypi/pyversions/fastest.svg)](https://pypi.org/project/fastest/)
-[![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
 Tests generator for fastapi applications
 
